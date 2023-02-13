@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:wght@100;500&family=Montserrat:wght@700&family=Permanent+Marker&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:wght@500&family=Montserrat:wght@700&family=Permanent+Marker&display=swap');
+*{
+    margin: 0;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right,rgb(65, 1, 1),rgb(1, 2, 36));
+    /* background: linear-gradient(to right,rgb(0, 183, 255),rgb(0, 135, 11)); */
+}
+.heading{
+    padding-top: 0;
+    text-align: center;
+    /* padding-bottom:5px; */
+    color: white;
+
+}
+h1{
+    font-size: 60px;
+    font-weight: 400;
+    font-family: 'Kanit', sans-serif;
+}
+h2{
+    font-size: 20px;
+    font-weight:lighter;
+    font-family: 'Kanit', sans-serif;
+}
+.calculator-grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4,80px);
+    grid-template-rows: minmax(100px,auto) repeat(5,80px);
+}
+.calculator-grid > button{
+cursor: pointer;
+font-size: 1.5rem;
+border:1px solid white;
+outline: none;
+background-color: rgba(241, 213, 213, 0.75);
+}
+.calculator-grid > button:hover{
+background-color:rgb(243, 228, 228);
+}
+.span-two{
+    grid-column: span 2;
+}
+.output{
+    grid-column:1/-1;
+    background-color: rgb(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.output .previous-output{
+    color: rgb(182, 181, 181);
+  font-size: 1rem;
+}
+.output .current-output{
+    color: white;
+  font-size: 2rem;
+}
+
+.footer{
+    text-align: center;
+    color: whitesmoke;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* background-color: rgb(204, 202, 254); */
+}
